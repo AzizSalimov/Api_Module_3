@@ -51,7 +51,7 @@ INSTALLED_APPS = [
 
     # my apps
     'api.apps.ApiConfig',
-    'users',
+
     'blogapi'
 
 ]
@@ -152,7 +152,7 @@ SIMPLE_JWT = {
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAuthField'
 
-AUTH_USER_MODEL = 'users.User'
+# AUTH_USER_MODEL = 'users.User'
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
