@@ -21,7 +21,7 @@ class PostSerializer(serializers.ModelSerializer):
         fields = ['id', 'title', 'body', 'owner', 'comments']
 
 
-class ProductCareateSerializer(serializers.ModelSerializer):
+class PostCareateSerializer(serializers.ModelSerializer):
     class Meta:
         model = Post
         fields = ["id", "title", 'body', 'owner']
