@@ -42,11 +42,15 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'rest_framework',
     'rest_framework.authtoken',
     'rest_framework_simplejwt',
+    'allauth.socialaccount',
+    'django.contrib.sites',
+    'allauth.account',
+    'rest_framework',
     'django_filters',
     'dj_rest_auth',
+    'allauth',
     'drf_yasg',
 
     # my apps
@@ -142,7 +146,7 @@ REST_FRAMEWORK = {
     ],
 }
 
-
+SITE_ID = 1
 
 REST_AUTH = {
     'USE_JWT': True
