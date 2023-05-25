@@ -1,4 +1,3 @@
-from django.contrib.auth.models import User
 from rest_framework import generics, permissions, status
 from rest_framework.pagination import LimitOffsetPagination
 from rest_framework.response import Response
@@ -85,18 +84,7 @@ class CategoryDetail(generics.RetrieveUpdateDestroyAPIView):
     permission_classes = [permissions.IsAuthenticatedOrReadOnly, IsOwnerOrReadOnly]
 
 
-class ProductListCreateView(generics.ListCreateAPIView):
-    queryset = Category.objects.order_by("-id")
-    filter_backends = (DjangoFilterBackend, OrderingFilter, SearchFilter)
-    filterset_fields = ("category", "brand")
-    ordering_fields = ("id", "price")
-    search_fields = ("title", "category__title", "brand__title")
-    pagination_class = CustomPageNumberPagination
 
-    def get_serializer_class(self):
-        if self.request.method == "POST":
-            return CategorySerializer
-        return CategorySerializer
 
 
 # class CategoryViewSet(viewsets.ModelViewSet):
@@ -123,12 +111,15 @@ class ProductListCreateView(generics.ListCreateAPIView):
 #         instance.delete()
 
 
-class PostLists(generics.ListCreateAPIView):
-    queryset = Category.objects.all()
-    serializer_class = PostSerializer
-    filter_backends = [DjangoFilterBackend, filters.SearchFilter, filters.OrderingFilter]
-    filterset_fields = ['category']
-    search_fields = ['title', 'content']
-    ordering_fields = ['title', 'created_at']
-    ordering = ['-created_at']
-    pagination_class = LimitOffsetPagination
+class PostListCreateView(generics.ListCreateAPIView):
+    queryset = Post.objects.order_by("-id")
+    filter_backends = (DjangoFilterBackend, OrderingFilter, SearchFilter)
+    filterset_fields = ("title", 'body')
+    ordering_fields = ("id", 'owner')
+    search_fields = ("title", 'id')
+    pagination_class = CustomPageNumberPagination
+
+    def get_serializer_class(self):
+        if self.request.method == "POST":
+            return
+        return PostSerializer

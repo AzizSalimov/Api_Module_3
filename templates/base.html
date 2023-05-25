@@ -37,7 +37,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
+            <a class="nav-link" href="{% url "register" %}">Register</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Services</a>
@@ -62,8 +62,10 @@
       <h5 class="card-header">Search</h5>
       <div class="card-body">
         <div class="input-group">
-          <input type="text" class="form-control" placeholder="Search for...">
-          <span class="input-group-append">
+            <label>
+                <input type="text" class="form-control" placeholder="Search for...">
+            </label>
+            <span class="input-group-append">
             <button class="btn btn-secondary" type="button">Go!</button>
           </span>
         </div>
@@ -81,17 +83,17 @@
                 <a href="{% url 'category-list' %}">Blog</a>
               </li>
               <li>
-                <a href="#">HTML</a>
+                <a href="{% url 'blog_posts' %}">Posts</a>
               </li>
               <li>
-                <a href="#">Freebies</a>
+                <a href="{% url 'category-list' %}">Categories</a>
               </li>
             </ul>
           </div>
           <div class="col-lg-6">
             <ul class="list-unstyled mb-0">
               <li>
-                <a href="#">JavaScript</a>
+                <a href="{% url 'register' %}">Register</a>
               </li>
               <li>
                 <a href="#">CSS</a>

@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
-environ.Env.read_env(os.path.join(BASE_DIR, 'config/../.env.example'))
+environ.Env.read_env(os.path.join(BASE_DIR, 'config/../config/../.env'))
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = env("SECRET_KEY")
@@ -43,16 +43,18 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
-    'drf_yasg',
+    'rest_framework.authtoken',
     'rest_framework_simplejwt',
     'django_filters',
     'dj_rest_auth',
-    'rest_framework.authtoken',
+    'drf_yasg',
 
     # my apps
-    'api.apps.ApiConfig',
 
-    'blogapi'
+    'api.apps.ApiConfig',
+    'blogapi',
+    'users'
+
 
 ]
 
@@ -140,6 +142,8 @@ REST_FRAMEWORK = {
     ],
 }
 
+
+
 REST_AUTH = {
     'USE_JWT': True
 }
@@ -150,9 +154,9 @@ SIMPLE_JWT = {
     "UPDATE_LAST_LOGIN": True,
 }
 
-DEFAULT_AUTO_FIELD = 'django.db.models.BigAuthField'
+DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-# AUTH_USER_MODEL = 'users.User'
+AUTH_USER_MODEL = 'users.User'
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
@@ -177,3 +181,6 @@ EMAIL_PORT = env("EMAIL_PORT")
 EMAIL_HOST_USER = env("EMAIL_HOST_USER")
 EMAIL_HOST_PASSWORD = env("EMAIL_HOST_PASSWORD")
 EMAIL_USE_TLS = True
+
+
+# AUTHENTICATION_BACKENDS = ["users.backends.CustomModelBackend"]

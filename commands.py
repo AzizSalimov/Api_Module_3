@@ -8,7 +8,7 @@ class Command(BaseCommand):
 
     def handle(self, *args, **options):
         fake = Faker()
-        quantity = 10000      # Adjust the quantity as per your needs
+        quantity = 10  # Adjust the quantity as per your needs
 
         for _ in range(quantity):
             category_name = fake.word()

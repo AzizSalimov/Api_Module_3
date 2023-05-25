@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from django.contrib.auth.models import User
+from users.models import User
 from api.models import Post, Comment, Category
 
 
@@ -19,6 +19,17 @@ class PostSerializer(serializers.ModelSerializer):
     class Meta:
         model = Post
         fields = ['id', 'title', 'body', 'owner', 'comments']
+
+
+class ProductCareateSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Post
+        fields = ["id", "title", 'body', 'owner']
+
+    def to_representation(self, instance):
+        data = super().to_representation(instance)
+        data["post"] = PostSerializer(instance.post).data
+        return data
 
 
 class CommentSerializer(serializers.ModelSerializer):

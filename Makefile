@@ -13,8 +13,12 @@ mak:
 mig:
 	python3 manage.py migrate
 
-run:
+r:
 	python3 manage.py runserver
 
 cre:
 	python3 manage.py createsuperuser
+
+
+run_2:
+	python manage.py runserver

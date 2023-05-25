@@ -16,3 +16,13 @@ class CategoryFactory(factory.django.DjangoModelFactory):
     parent = factory.SubFactory(ParentCategoryFactory)
 
 
+class ProductFactory(factory.django.DjangoModelFactory):
+    class Meta:
+        model = 'api.Category'
+
+    title = factory.Faker("word")
+    price = factory.Faker('pyfloat')
+    category = factory.SubFactory(CategoryFactory)
+
+
+
