@@ -17,3 +17,32 @@
  # Post List
  
  ![изображение](https://github.com/AzizSalimov/Api_Module_3/assets/122611579/4f95020f-9505-4221-971b-578152a1b818)
+
+# Swagger blog
+
+![изображение](https://github.com/AzizSalimov/Api_Module_3/assets/122611579/d807f73d-47a3-43d4-a724-0c6e38b70e2b)
+
+![изображение](https://github.com/AzizSalimov/Api_Module_3/assets/122611579/3bd4b142-98be-4c18-9e72-976f31d1876f)
+
+![изображение](https://github.com/AzizSalimov/Api_Module_3/assets/122611579/25af05f6-9a17-473a-aaac-d91d8a620e6e)
+
+
+# Swagger users
+
+![изображение](https://github.com/AzizSalimov/Api_Module_3/assets/122611579/6a683bcb-ab4e-474c-9c67-9abf50a14872)
+
+# Users Email Verification
+
+![изображение](https://github.com/AzizSalimov/Api_Module_3/assets/122611579/2b0a2815-a0a8-4b53-9f3a-720c50e7acc5)
+
+![изображение](https://github.com/AzizSalimov/Api_Module_3/assets/122611579/54f7692d-0b67-4171-ab8a-0807624ff025)
+
+![изображение](https://github.com/AzizSalimov/Api_Module_3/assets/122611579/a13ca476-7ec0-4243-94cc-741ba17d5591)
+
+
+# Email Check-Verification
+
+![изображение](https://github.com/AzizSalimov/Api_Module_3/assets/122611579/b61f5d9c-c2cf-4d8e-a342-47a4874c2783)
+
+![изображение](https://github.com/AzizSalimov/Api_Module_3/assets/122611579/1772519a-059a-4b78-83b9-f96bc0dc32e5)
+
