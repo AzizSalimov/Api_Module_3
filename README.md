@@ -27,6 +27,21 @@
 ![изображение](https://github.com/AzizSalimov/Api_Module_3/assets/122611579/25af05f6-9a17-473a-aaac-d91d8a620e6e)
 
 
+# Blog register
+
+![изображение](https://github.com/AzizSalimov/Api_Module_3/assets/122611579/b15a1957-eae2-42b9-a403-a33213a0866b)
+
+
+
+# Blog Google Social Auth
+
+![изображение](https://github.com/AzizSalimov/Api_Module_3/assets/122611579/0c8dc866-e961-4444-9ed1-d79e0adbd99a)
+
+# Blog Facebook Social Auth
+
+![изображение](https://github.com/AzizSalimov/Api_Module_3/assets/122611579/9e3dab8f-c01f-4780-b017-5a805c2567f7)
+
+
 # Swagger users
 
 ![изображение](https://github.com/AzizSalimov/Api_Module_3/assets/122611579/6a683bcb-ab4e-474c-9c67-9abf50a14872)
@@ -46,3 +61,9 @@
 
 ![изображение](https://github.com/AzizSalimov/Api_Module_3/assets/122611579/1772519a-059a-4b78-83b9-f96bc0dc32e5)
 
+
+
+# Deploy
+
+```sql
+Serverga joylashda server tomonidan bir ikki muammolar kelib chiqyapdi shular hal bolgach saytning linkni joylashtiraman ```
